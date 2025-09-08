@@ -67,7 +67,7 @@ DIF_INGESTION = StartFlexTemplateCustomOperator(
     task_id = ''CNDR_{{user_id}}_EMPLOYEE_{{wf_id}}_{{job_id}}_BASH_TASK'',
     location = 'us-central1',
     project_id = 'dm-condor-dev',
-    job_name = "'cndr-{{user_id}}-employee-{{wf_id}}-{{job_id}}-1240-m'",
+    job_name = "'{prefix}{{user_id}}-employee-{{wf_id}}-{{job_id}}-1240-m'",
     container_spec_gcs_path = 'gs://condor_dev_gcs/onix_condor_core_flex_template_v1.json',
     parameters = {
              "project": "dm-condor-dev",
