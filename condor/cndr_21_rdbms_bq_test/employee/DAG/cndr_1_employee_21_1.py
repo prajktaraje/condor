@@ -73,7 +73,7 @@ DIF_INGESTION = StartFlexTemplateCustomOperator(
              "project": "dm-condor-dev",
              "task_prop_table": "dm-condor-dev.condor_dev.task_prop_table",
              "bq_project": "dm-condor-dev",
-             "task_id": "CNDR_1_EMPLOYEE_21_1",
+             "task_id": "CNDR_{{user_id}}_EMPLOYEE_{{wf_id}}_{{job_id}}",
     },
     environment = {
                 "tempLocation": "gs://condor_dev_gcs/temp/",
