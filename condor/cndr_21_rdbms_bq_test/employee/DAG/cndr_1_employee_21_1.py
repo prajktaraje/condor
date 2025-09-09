@@ -64,7 +64,7 @@ dag = DAG(
 
 # Dataflow Flex Template Operator
 DIF_INGESTION = StartFlexTemplateCustomOperator(
-    task_id = 'CNDR_{{user_id}}_EMPLOYEE_{{wf_id}}_{{job_id}}_BASH_TASK',
+    task_id = 'CNDR_{{user_id}}_EMPLOYEE_{{wf_id}}_{{job_id}}',
     location = 'us-central1',
     project_id = 'dm-condor-dev',
     job_name = "cndr-{{user_id}}-employee-{{wf_id}}-{{job_id}}-1240-m",
